@@ -54,13 +54,13 @@ export function Button({ as: Comp = 'button', ...props }) {
 export function useProject(id: string) { /* shared fetching/caching */ }
 
 // utils/date.ts
-export function formatDate(d: string) { /* ... */ }
+export function formatDate(date: string) { /* ... */ }
 ```
 
 **Guideline**
 
 * Hooks follow the same rules as components: keep them small, composable, and DRY.
-* Avoid repeating logic across hooks—compose them instead.
+* Avoid repeating logic across hooks, remember composition.
 
 ---
 
