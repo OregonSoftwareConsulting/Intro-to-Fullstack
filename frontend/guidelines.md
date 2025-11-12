@@ -17,7 +17,9 @@ function SmartButton() { /* fetch + logic + styles + markup */ }
 // Good: compose behavior + UI
 function useSaveThing() { /* state + side effects */ }
 
-// You would probably want a little more than this to justify a separate component. However, you might also try thinking ahead and realize you may want a spinner for all of your save buttons later on while pending. Even if this minimal implementation seems overkill right now, this saves future development time.
+// You would probably want a little more than this to justify a separate component.
+// However, you might also try thinking ahead and realize you may want a spinner for all of your save buttons later on while pending.
+// Even if this minimal implementation seems overkill right now, this saves future development time.
 function SaveButton(props: { onClick: () => void; disabled?: boolean }) {
   return <button disabled={props.disabled} onClick={props.onClick}>Save</button>;
 }
